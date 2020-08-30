@@ -21,3 +21,10 @@ My dream is to work for such giants as Google or Yandex. And I am ready to make 
 	
 ### Code Examples:
 * [Codewars](https://www.codewars.com/users/bulletxenus/completed_solutions)
+
+## Experience:
+* [HTML Academy](https://htmlacademy.ru/profile/dmitry_khamitsevich)
+	
+* [Udemy](https://www.udemy.com/user/dmitry-2193/)
+	
+* [Codeacademy](https://www.codecademy.com/profiles/Dmitry_Khamitsevich)
