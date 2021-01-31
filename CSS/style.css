@@ -1,0 +1,19 @@
+body {
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  margin-left: 150px;
+}
+
+
+
+hr {
+  color: rgb(238, 236, 236);
+  width: 500px;
+  margin-left: 5px;
+}
+
+.top {
+  display: flex;
+  flex-direction: column-reverse;
+}

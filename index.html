@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Dmitry Khamitsevich resume</title>
+    <link rel="stylesheet" href="CSS\styleIndex.css">
+  </head>
+  <body>
+    <header>
+      <div class = "top">
+        <div class="photo">
+          <img src="image\photo.jpg" width="170" height ="210" alt="photo">
+        </div>
+        <div class="name">
+          <h1>Dmitry Khamitsevich</h1>
+        </div>
+      </div>
+      <hr>
+      <div class="contact-info">
+        <h3>Contact info:</h3>
+        
+        <ul>
+          <li><strong>tel.</strong> <i>+375292501710</i></li>
+          <li><strong>e-mail:</strong> <i>bullet.xenus@gmail.com</i></li>
+          <li><strong>discord:</strong> <i>bullet.xenus#5967;</i></li>
+          <li><strong>Adress:</strong> Minsk region, Soligorsk, Lenin str. 10a.</li>
+        </ul>
+        <hr>
+      </div>
+    </header>
+    <main>
+      <section class="summary">
+        <h3>Summary:</h3>
+        <p>I want to become a junior front-end developer, develop and grow in the IT direction. My dream is to work for such giants as Google or Yandex. And I am ready to make every effort to achieve my goals.</p>
+        <hr>
+      </section>
+      <section class="skills">
+        <div>
+          <h2>Skills:</h2>
+          <ul>
+            <li type="circle">HTML</li>
+            <li>CSS</li>
+            <li type="circle">Javascript</li>
+            <li>Java core</li>
+          </ul>
+        </div>
+        <div class="code-examples">
+          <h4>Code examples:</h4>
+          <code>
+            <p>example: Find The Duplicated Number in a Consecutive Unsorted List</p>
+            <pre>
+              function findDup (arr) {
+                let x = arr.sort((a, b) => a - b);
+                return filterArr(x);
+              }
+          
+              console.log(findDup([1,2,4,3]));
+          
+              function filterArr (array) {
+                for (let i = 0; i < array.length; i++) {
+                  if (array[i] - array[i+1] == 0) {
+                      return array[i];
+                  }
+                }
+              }
+            </pre>            
+          </code>
+          <br>
+          <p>More code in <a href="https://www.codewars.com/users/bulletxenus/completed_solutions">Codewars.com.</a></p>
+        </div>
+        <div class="experience">
+          <h3>Experience:</h3>
+          <ul>
+            <li><a href="https://htmlacademy.ru/profile/dmitry_khamitsevich">htmlAcademy</a></li>
+            <li type="circle"><a href="https://www.udemy.com/user/dmitry-2193/">Udemy</a></li>
+            <li type="square"><a href="https://www.codecademy.com/profiles/Dmitry_Khamitsevich">Codeacademy</a></li>
+          </ul>
+        </div>  
+        <hr>      
+      </section>
+      <section class="education">
+        <h2>Education:</h2>
+        <div class="university">
+          <p><strong>Belarussian National Technical University</strong> 2010 - 2015 years</p>
+          <p><i>Bachelor's degree in mining enineering</i></p>
+        </div>
+        <div class="english">
+          <h3>English:</h3>
+          <p>Pre-intemediate level. Have some expirience of communications with people from Europe while traveling. Study english with app "Easy Lern English", "Duolingo".</p>
+        </div>
+        <hr>
+      </section>
+
+    </main>
+
+  </body>
+</html>

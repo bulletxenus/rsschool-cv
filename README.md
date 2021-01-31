@@ -1,1 +1,3 @@
-https://bulletxenus/rsschool-cv/cv
+
+https://bulletxenus.github.io/rsschool-cv/cv
+
