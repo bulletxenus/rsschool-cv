@@ -3,96 +3,178 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> Dmitry Khamitsevich resume</title>
+    <title> Dmitry Khamitsevich cv</title>
     <link rel="stylesheet" href="CSS\styleIndex.css">
+    <link rel="shortcut icon" href="./image/icon.png" type="image/png">
   </head>
   <body>
-    <header>
-      <div class = "top">
-        <div class="photo">
-          <img src="image\photo.jpg" width="170" height ="210" alt="photo">
-        </div>
-        <div class="name">
-          <h1>Dmitry Khamitsevich</h1>
-        </div>
-      </div>
-      <hr>
-      <div class="contact-info">
-        <h3>Contact info:</h3>
-        
-        <ul>
-          <li><strong>tel.</strong> <i>+375292501710</i></li>
-          <li><strong>e-mail:</strong> <i>bullet.xenus@gmail.com</i></li>
-          <li><strong>discord:</strong> <i>bullet.xenus#5967;</i></li>
-          <li><strong>Adress:</strong> Minsk region, Soligorsk, Lenin str. 10a.</li>
-        </ul>
-        <hr>
-      </div>
-    </header>
-    <main>
-      <section class="summary">
-        <h3>Summary:</h3>
-        <p>I want to become a junior front-end developer, develop and grow in the IT direction. My dream is to work for such giants as Google or Yandex. And I am ready to make every effort to achieve my goals.</p>
-        <hr>
-      </section>
-      <section class="skills">
-        <div>
-          <h2>Skills:</h2>
-          <ul>
-            <li type="circle">HTML</li>
-            <li>CSS</li>
-            <li type="circle">Javascript</li>
-            <li>Java core</li>
-          </ul>
-        </div>
-        <div class="code-examples">
-          <h4>Code examples:</h4>
-          <code>
-            <p>example: Find The Duplicated Number in a Consecutive Unsorted List</p>
-            <pre>
-              function findDup (arr) {
-                let x = arr.sort((a, b) => a - b);
-                return filterArr(x);
-              }
-          
-              console.log(findDup([1,2,4,3]));
-          
-              function filterArr (array) {
-                for (let i = 0; i < array.length; i++) {
-                  if (array[i] - array[i+1] == 0) {
-                      return array[i];
-                  }
-                }
-              }
-            </pre>            
-          </code>
-          <br>
-          <p>More code in <a href="https://www.codewars.com/users/bulletxenus/completed_solutions">Codewars.com.</a></p>
-        </div>
-        <div class="experience">
-          <h3>Experience:</h3>
-          <ul>
-            <li><a href="https://htmlacademy.ru/profile/dmitry_khamitsevich">htmlAcademy</a></li>
-            <li type="circle"><a href="https://www.udemy.com/user/dmitry-2193/">Udemy</a></li>
-            <li type="square"><a href="https://www.codecademy.com/profiles/Dmitry_Khamitsevich">Codeacademy</a></li>
-          </ul>
-        </div>  
-        <hr>      
-      </section>
-      <section class="education">
-        <h2>Education:</h2>
-        <div class="university">
-          <p><strong>Belarussian National Technical University</strong> 2010 - 2015 years</p>
-          <p><i>Bachelor's degree in mining enineering</i></p>
-        </div>
-        <div class="english">
-          <h3>English:</h3>
-          <p>Pre-intemediate level. Have some expirience of communications with people from Europe while traveling. Study english with app "Easy Lern English", "Duolingo".</p>
-        </div>
-        <hr>
+    <div>
+
+      <section>
+        <img src="./image/mainPhoto.jpg" alt="photo of Dmitry Khamitsevich" width="400">
       </section>
 
-    </main>
+
+      <section>
+        <header>
+          <h1>Dmitry Khamitsevich </h1>
+          <h4>27 years old</h4>
+          <article>
+            About myself...
+          </article>
+        </header>
+
+        <main>
+          <article>
+            <h3>My skills:</h3>
+            <section>
+              <h4>Programming languages:</h4>
+              <div>
+                  <figure>
+                    <img src="./image/htmlIcon.png" alt="HTML" width="80">
+                    <figcaption>HTML</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="./image/CSS.png" alt="CSS" width="80">
+                    <figcaption>CSS</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="./image/JSIcon.png" alt="JS" width="80">
+                    <figcaption>JavaScript</figcaption>
+                  </figure>
+              </div>
+            </section>
+
+            <section>
+              <h4>Frameworks and other technologies</h4>
+              <div>
+                <figure>
+                  <img src="./image/React.png" alt="ReactJS" width="50">
+                  <figcaption>ReactJS</figcaption>
+                </figure>
+                <figure>
+                  <img src="./image/sass-code-style.png" alt="Preprocessor SASS" width="50">
+                  <figcaption>SASS</figcaption>
+                </figure>
+                <figure>
+                  <img src="./image/Git.png" alt="GIT" width="50">
+                  <figcaption>GIT</figcaption>
+                </figure>
+                <figure>
+                  <img src="./image/webpack.png" alt="Webpack" width="50">
+                  <figcaption>Webpack</figcaption>
+                </figure>
+                <figure>
+                  <img src="./image/eslint.png" alt="Eslint" width="50">
+                  <figcaption>Eslint</figcaption>
+                </figure>
+                <figure>
+                  <img src="./image/other.png" alt="Other JS libraries..." width="150">
+                  <figcaption>Other...</figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <section>
+              <h3>Code example:</h3>
+              <pre>
+
+                export default function toCreateHTML(tagName, classList, parent, source, attribute, content) {
+                  const HTMLElement = document.createElement(tagName);
+
+                  if (classList !== '' && classList !== undefined) {
+                    classList.map((a) => HTMLElement.classList.add(a));
+                  }
+
+                  if (parent !== '' && parent !== undefined) parent.append(HTMLElement);
+
+                  if (source !== '' && source !== undefined) {
+                    // eslint-disable-next-line no-unused-expressions
+                    tagName === 'img' ? HTMLElement.src = source : HTMLElement.setAttribute('href', source);
+                  }
+
+                  if (attribute !== undefined && attribute !== '') {
+                    HTMLElement.setAttribute(attribute[0], attribute[1]);
+                  }
+
+                  if (content !== undefined) {
+                    HTMLElement.innerText = content;
+                  }
+
+                  return HTMLElement;
+                }
+
+              </pre>
+            </section>
+
+            <section>
+              <h3>Experience:</h3>
+              <p>This are some of my projects:</p>
+              <div>
+                <figure>
+                  <img src="./image/covidProject.png" alt="Covid Dashboard App" width="250">
+                  <a href="https://rolling-scopes-school.github.io/bulletxenus-JS2020Q3/covid-dashboard/index.html">
+                    Covid App
+                  </a>
+                </figure>
+                <figure>
+                  <img src="./image/EnglishApp.png" alt="English for Kids App" width="250">
+                  <a href="https://rolling-scopes-school.github.io/bulletxenus-JS2020Q3/english-for-kids/src/">
+                    English for kids App
+                  </a>
+                </figure>
+                <figure>
+                  <img src="./image/MomentumApp.png" alt="Momentum App" width="250">
+                  <a href="https://momentum-beta.netlify.app/">
+                    Momentum
+                  </a>
+                </figure>
+              </div>
+            </section>
+
+            <section>
+              <h3>Education:</h3>
+              <ul>
+                <li><p><strong>Belarusian National Technical University</strong></p>
+                    <p>Bachelor’s degree in mining engineering</p>
+                </li>
+                <li>
+                  <p>RSSchool JS/FE Q3 in 2020</p>
+                </li>
+                <li>
+                  <p><a href="https://freecodecamp.com">FreeCodeCamp.com</a></p>
+                </li>
+                <li><a href="https://learn.javascript.ru/">Modern JavaScript Tutorial</a></li>
+              </ul>
+            </section>
+
+            <section>
+              <h4>English skills:</h4>
+              <span>Pre-intermediate level. Have some experience of communications with people from Europe while traveling.
+                Study english with app “Easy Learn English”, “Duolingo”.</span>
+            </section>
+          </article>
+        </main>
+      </section>
+
+
+      <footer>
+        <figure>
+          <a href="https://github.com/bulletxenus">
+            <img src="./image/gitHub.png" width="50" alt="gitHub icon">
+          </a>
+        </figure>
+        <time>year 2021</time>
+        <figure>
+          <a href="https://rs.school/js/">
+            <img src="./image/rs_school_js.png" alt="rss logo" width="50">
+          </a>
+        </figure>
+
+      </footer>
+
+    </div>
+
 
   </body>
 </html>
