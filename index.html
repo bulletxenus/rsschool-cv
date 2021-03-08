@@ -4,32 +4,36 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Dmitry Khamitsevich cv</title>
-    <link rel="stylesheet" href="CSS\styleIndex.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/styles.css">
     <link rel="shortcut icon" href="./image/icon.png" type="image/png">
   </head>
   <body>
-    <div>
+    <div class="cv__container">
 
-      <section>
-        <img src="./image/mainPhoto.jpg" alt="photo of Dmitry Khamitsevich" width="400">
+      <section class="cv__container_photo">
+        <img src="./image/mainPhoto.jpg" alt="photo of Dmitry Khamitsevich"  class="cv__container_photo_image">
+        <h2 class="cv__container_photo_name">Dmitry Khamitsevich</h2>
+        <p>Beginner (junior) front-end developer</p>
       </section>
 
 
-      <section>
-        <header>
+      <section class="cv__container_description">
+        <header class="cv__container_description_header">
           <h1>Dmitry Khamitsevich </h1>
-          <h4>27 years old</h4>
-          <article>
-            About myself...
+          <h4>I am 27 years old.</h4>
+          <article class="cv__container_description_aboutMe">
+            I want to become a junior front-end developer and in future become a full-stack developer, develop and grow in the IT direction. My dream is to work for such giants as Google or Facebook. I have about 7 month experience in web-development. And i like front-end very well.
           </article>
         </header>
 
-        <main>
-          <article>
-            <h3>My skills:</h3>
-            <section>
+        <main class="cv__container_main">
+          <article class="cv__container_main_knowledge">
+            <h3 class="cv__container_main_skills">My skills:</h3>
+            <section class="cv__container_main_program">
               <h4>Programming languages:</h4>
-              <div>
+              <div class="cv__container_main_languages">
                   <figure>
                     <img src="./image/htmlIcon.png" alt="HTML" width="80">
                     <figcaption>HTML</figcaption>
@@ -45,9 +49,9 @@
               </div>
             </section>
 
-            <section>
+            <section class="cv__container_main_technology">
               <h4>Frameworks and other technologies</h4>
-              <div>
+              <div class="cv__container_main_technology_Icon">
                 <figure>
                   <img src="./image/React.png" alt="ReactJS" width="50">
                   <figcaption>ReactJS</figcaption>
@@ -158,23 +162,25 @@
       </section>
 
 
-      <footer>
-        <figure>
-          <a href="https://github.com/bulletxenus">
-            <img src="./image/gitHub.png" width="50" alt="gitHub icon">
-          </a>
-        </figure>
-        <time>year 2021</time>
-        <figure>
-          <a href="https://rs.school/js/">
-            <img src="./image/rs_school_js.png" alt="rss logo" width="50">
-          </a>
-        </figure>
 
-      </footer>
 
     </div>
+    <footer class="cv__footer">
+      <figure class="cv__footer_gitHub">
+        <a href="https://github.com/bulletxenus">
+          <img src="./image/gitHub.png" width="45" alt="gitHub icon">
+        </a>
+      </figure>
+      <time class="cv__footer_year">
+        Year: 2021
+      </time>
+      <figure class="cv__footer_rssLogo">
+        <a href="https://rs.school/js/">
+          <img src="./image/rs_school_js.png" alt="rss logo" width="50">
+        </a>
+      </figure>
 
+    </footer>
 
   </body>
 </html>
