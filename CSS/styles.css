@@ -10,7 +10,7 @@ body {
 
 .cv__container {
   max-width: 80%;
-  height: 94vh;
+  height: 93vh;
   margin: 0 auto;
   padding: 1%;
   background-color: #303030;
@@ -22,7 +22,7 @@ body {
   overflow: hidden;
 }
 .cv__container .cv__container_photo {
-  height: 100%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,12 +35,30 @@ body {
   box-shadow: -2px 14px 6px 3px rgba(0, 0, 0, 0.63);
 }
 .cv__container .cv__container_photo .cv__container_photo_name {
-  margin: 10% 0 1%;
+  margin: 5% 0 1%;
+}
+.cv__container .cv__container_photo .cv__container_contacts {
+  display: flex;
+  margin: 5% 0;
+}
+.cv__container .cv__container_photo .cv__container_contacts a > img {
+  width: 50%;
+}
+.cv__container .cv__container_photo .cv__container_contacts a > img:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+.cv__container .cv__container_photo .cv__container_contacts .phone img, .cv__container .cv__container_photo .cv__container_contacts .telegram img {
+  width: 44%;
+}
+.cv__container .cv__container_photo .cv__container_contacts .vk img {
+  width: 55%;
 }
 .cv__container .cv__container_description {
   overflow-y: scroll;
   overflow-x: hidden;
   margin: 5% 2% 0 0;
+  height: 80%;
 }
 .cv__container .cv__container_description .cv__container_description_header {
   margin: 0 0 5%;
@@ -67,12 +85,112 @@ body {
   justify-content: space-around;
   text-align: center;
 }
+.cv__container .cv__container_description .cv__container_main_program .cv__container_main_languages .JS {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .cv__container .cv__container_description .cv__container_main_technology h4 {
   margin: 5% 0;
 }
 .cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 0.5fr);
+}
+.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon figure:nth-child(6) {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  margin: 0 auto;
+}
+.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon figure:nth-child(6) figcaption {
+  text-align: center;
+}
+.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon figure:nth-child(5) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon figure:nth-child(4) {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon figure:nth-child(1),
+.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon figure:nth-child(2),
+.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon figure:nth-child(3) {
+  margin: 0 auto;
+}
+.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon figure:nth-child(1) figcaption,
+.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon figure:nth-child(2) figcaption,
+.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon figure:nth-child(3) figcaption {
+  text-align: center;
+}
+.cv__container .cv__container_description .cv__container_codeExample {
+  margin: 5% 0;
+}
+.cv__container .cv__container_description .cv__container_codeExample h3 {
+  margin-bottom: 5%;
+}
+.cv__container .cv__container_description .cv__container_codeExample .cv__container_code {
+  font-size: 0.7em;
+  text-align: start;
+}
+.cv__container .cv__container_description .cv__container_experience h3, .cv__container .cv__container_description .cv__container_experience p {
+  margin: 5% 0;
+}
+.cv__container .cv__container_description .cv__container_experience .cv__container_projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cv__container .cv__container_description .cv__container_experience .cv__container_projects figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4% 0;
+}
+.cv__container .cv__container_description .cv__container_experience .cv__container_projects figure a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s;
+}
+.cv__container .cv__container_description .cv__container_experience .cv__container_projects figure a:hover {
+  color: white;
+  transition: 0.5s;
+}
+.cv__container .cv__container_description .cv__container_experience .cv__container_projects figure img {
+  margin-bottom: 3%;
+  width: 45%;
+  transition: 0.2s;
+}
+.cv__container .cv__container_description .cv__container_experience .cv__container_projects figure img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.cv__container .cv__container_description .cv__container_education {
+  margin: 5% 0;
+}
+.cv__container .cv__container_description .cv__container_education h3 {
+  margin: 4% 0;
+}
+.cv__container .cv__container_description .cv__container_education ul > li {
+  margin: 3%;
+}
+.cv__container .cv__container_description .cv__container_education ul > li a {
+  transition: 0.5s;
+}
+.cv__container .cv__container_description .cv__container_education ul > li a:hover {
+  color: white;
+  transition: 0.5s;
+}
+.cv__container .cv__container_description .cv__container_english {
+  margin: 5% 0;
+}
+.cv__container .cv__container_description .cv__container_english h4, .cv__container .cv__container_description .cv__container_english span {
+  margin: 3% 0;
 }
 
 .cv__footer {
@@ -88,6 +206,14 @@ body {
 .cv__footer .cv__footer_year, .cv__footer .cv__footer_rssLogo {
   display: flex;
   align-items: center;
+}
+.cv__footer .cv__footer_gitHub:hover {
+  transform: scale(1.03);
+  transition: 0.2s;
+}
+.cv__footer .cv__footer_rss:hover {
+  transform: scale(1.06);
+  transition: 0.2s;
 }
 
 ::-webkit-scrollbar {
