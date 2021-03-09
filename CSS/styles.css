@@ -38,6 +38,7 @@ body {
   margin: 5% 0 1%;
 }
 .cv__container .cv__container_photo .cv__container_contacts {
+  list-style-type: none;
   display: flex;
   margin: 5% 0;
 }
@@ -81,6 +82,7 @@ body {
   margin: 3% 0;
 }
 .cv__container .cv__container_description .cv__container_main_program .cv__container_main_languages {
+  list-style-type: none;
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -94,37 +96,38 @@ body {
   margin: 5% 0;
 }
 .cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon {
+  list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 0.5fr);
 }
-.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon figure:nth-child(6) {
+.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon li:nth-child(6) {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 5;
   margin: 0 auto;
 }
-.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon figure:nth-child(6) figcaption {
+.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon li:nth-child(6) figcaption {
   text-align: center;
 }
-.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon figure:nth-child(5) {
+.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon li:nth-child(5) {
   grid-column-start: 3;
   grid-column-end: 4;
 }
-.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon figure:nth-child(4) {
+.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon li:nth-child(4) {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon figure:nth-child(1),
-.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon figure:nth-child(2),
-.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon figure:nth-child(3) {
+.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon li:nth-child(1),
+.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon li:nth-child(2),
+.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon li:nth-child(3) {
   margin: 0 auto;
 }
-.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon figure:nth-child(1) figcaption,
-.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon figure:nth-child(2) figcaption,
-.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon figure:nth-child(3) figcaption {
+.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon li:nth-child(1) figcaption,
+.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon li:nth-child(2) figcaption,
+.cv__container .cv__container_description .cv__container_main_technology .cv__container_main_technology_Icon li:nth-child(3) figcaption {
   text-align: center;
 }
 .cv__container .cv__container_description .cv__container_codeExample {
