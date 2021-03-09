@@ -22,7 +22,7 @@ body {
   overflow: hidden;
 }
 .cv__container .cv__container_photo {
-  height: 80%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,7 +58,7 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   margin: 5% 2% 0 0;
-  height: 80%;
+  height: 78%;
 }
 .cv__container .cv__container_description .cv__container_description_header {
   margin: 0 0 5%;
