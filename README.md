@@ -1,1 +1,1 @@
-https://bulletxenus.github.io/rsschool-cv/
+My resume: https://bulletxenus.github.io/rsschool-cv/
