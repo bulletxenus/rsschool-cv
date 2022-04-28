@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Dmitry Khamitsevich cv</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="shortcut icon" href="./image/icon.png" type="image/png">
+  </head>
+  <body>
+    <div class="cv__container">
+
+      <section class="cv__container_photo">
+        <img src="./image/mainPhoto.jpg" alt="photo of Dmitry Khamitsevich"  class="cv__container_photo_image">
+        <h2 class="cv__container_photo_name">Dmitry Khamitsevich</h2>
+        <p>Beginner (junior) front-end developer</p>
+        <ul class="cv__container_contacts">
+          <li>
+            <a href="tel:+375292501710" class="phone" title="tel: +375292501710">
+              <img src="./image/phone.png" alt="phone number">
+            </a>
+          </li>
+          <li>
+            <a href="mailto:bullet.xenus@gmail.com" class="email" title="e-mail: bullet.xenus@gmail.com">
+              <img src="./image/email.png" alt="email">
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/DmitryKhamitsevich" class="telegram" title="https://t.me/DmitryKhamitsevich">
+              <img src="./image/telegram.png" alt="telegram">
+            </a>
+          </li>
+          <li>
+            <a href="https://vk.com/id18815948" class="vk" title="https://vk.com/id18815948">
+              <img src="./image/vk.png" alt="vk">
+            </a>
+          </li>
+
+        </ul>
+      </section>
+
+
+      <div class="cv__container_description">
+        <header class="cv__container_description_header">
+          <h1>Dmitry Khamitsevich </h1>
+          <h4>I am 27 years old.</h4>
+          <article class="cv__container_description_aboutMe">
+            <h4>Some words about me:</h4>
+            I want to become a junior front-end developer and in future become a full-stack developer, develop and grow in the IT direction. My dream is to work for such giants as Google or Facebook. I have about 7 month experience in web-development. And i like front-end very well.
+          </article>
+        </header>
+
+        <main class="cv__container_main">
+          <article class="cv__container_main_knowledge">
+            <h3 class="cv__container_main_skills">My skills:</h3>
+            <section class="cv__container_main_program">
+              <h4>Programming languages:</h4>
+              <ul class="cv__container_main_languages">
+                <li>
+                  <figure class="HTML">
+                    <img src="./image/htmlIcon.png" alt="HTML" width="80">
+                    <figcaption>HTML</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure class="CSS">
+                    <img src="./image/CSS.png" alt="CSS" width="80">
+                    <figcaption>CSS</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure class="JS">
+                    <img src="./image/JSIcon.png" alt="JS" width="80">
+                    <figcaption>JavaScript</figcaption>
+                  </figure>
+                </li>
+              </ul>
+            </section>
+
+            <section class="cv__container_main_technology">
+              <h4>Frameworks and other technologies</h4>
+              <ul class="cv__container_main_technology_Icon">
+                <li>
+                  <figure>
+                    <img src="./image/React.png" alt="ReactJS" width="50">
+                    <figcaption>ReactJS</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure>
+                    <img src="./image/sass-code-style.png" alt="Preprocessor SASS" width="50">
+                    <figcaption>SASS</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure>
+                    <img src="./image/Git.png" alt="GIT" width="50">
+                    <figcaption>GIT</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure>
+                    <img src="./image/webpack.png" alt="Webpack" width="50">
+                    <figcaption>Webpack</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure>
+                    <img src="./image/eslint.png" alt="Eslint" width="50">
+                    <figcaption>Eslint</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure>
+                    <img src="./image/other.png" alt="Other JS libraries..." width="150">
+                    <figcaption>Other...</figcaption>
+                  </figure>
+                </li>
+
+              </ul>
+            </section>
+
+            <section class="cv__container_codeExample">
+              <h3>Code example:</h3>
+              <pre class="cv__container_code">
+
+          export default function toCreateHTML(tagName, classList, parent, source, attribute, content) {
+            const HTMLElement = document.createElement(tagName);
+
+            if (classList !== '' && classList !== undefined) {
+              classList.map((a) => HTMLElement.classList.add(a));
+            }
+
+            if (parent !== '' && parent !== undefined) parent.append(HTMLElement);
+
+            if (source !== '' && source !== undefined) {
+              // eslint-disable-next-line no-unused-expressions
+              tagName === 'img' ? HTMLElement.src = source : HTMLElement.setAttribute('href', source);
+            }
+
+            if (attribute !== undefined && attribute !== '') {
+              HTMLElement.setAttribute(attribute[0], attribute[1]);
+            }
+
+            if (content !== undefined) {
+              HTMLElement.innerText = content;
+            }
+
+            return HTMLElement;
+          }
+
+              </pre>
+            </section>
+
+            <section class="cv__container_experience">
+              <h3>Experience:</h3>
+              <p>This are some of my projects:</p>
+              <div class="cv__container_projects">
+                <figure>
+                  <a href="https://rolling-scopes-school.github.io/bulletxenus-JS2020Q3/covid-dashboard/index.html">
+                    <img src="./image/covidProject.png" alt="Covid Dashboard App">
+                    Covid App
+                  </a>
+                </figure>
+                <figure>
+
+                  <a href="https://rolling-scopes-school.github.io/bulletxenus-JS2020Q3/english-for-kids/src/">
+                    <img src="./image/EnglishApp.png" alt="English for Kids App">
+                    English for kids App
+                  </a>
+                </figure>
+                <figure>
+
+                  <a href="https://momentum-beta.netlify.app/">
+                    <img src="./image/MomentumApp.png" alt="Momentum App">
+                    Momentum
+                  </a>
+                </figure>
+              </div>
+            </section>
+
+            <section class="cv__container_education">
+              <h3>Education:</h3>
+              <ul>
+                <li><p><strong>Belarusian National Technical University</strong></p>
+                    <p>Bachelor’s degree in mining engineering</p>
+                </li>
+                <li>
+                  <p>RSSchool JS/FE Q3 in 2020</p>
+                </li>
+                <li>
+                  <p><a href="https://freecodecamp.com">FreeCodeCamp.com</a></p>
+                </li>
+                <li><a href="https://learn.javascript.ru/">Modern JavaScript Tutorial</a></li>
+              </ul>
+            </section>
+
+            <section class="cv__container_english">
+              <h4>English skills:</h4>
+              <span>Pre-intermediate level. Have some experience of communications with people from Europe while traveling.
+                Study english with app “Easy Learn English”, “Duolingo”.</span>
+            </section>
+          </article>
+        </main>
+      </div>
+
+    </div>
+    <footer class="cv__footer">
+      <figure class="cv__footer_gitHub">
+        <a href="https://github.com/bulletxenus">
+          <img src="./image/gitHub.png" width="45" alt="gitHub icon" class="cv__footer_gitHub">
+        </a>
+      </figure>
+      <time datetime="2021-03-09" class="cv__footer_year">
+        Year: 2021
+      </time>
+      <figure class="cv__footer_rssLogo">
+        <a href="https://rs.school/js/">
+          <img src="./image/rs_school_js.png" alt="rss logo" width="50" class="cv__footer_rss">
+        </a>
+      </figure>
+
+    </footer>
+
+  </body>
+</html>
